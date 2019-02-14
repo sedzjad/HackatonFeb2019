@@ -13,10 +13,7 @@ public class CheckItems : MonoBehaviour
 
     public void CheckingItem()
     {
-        switch (Items)
-        {
-            
-        }
+    
 
     }
 

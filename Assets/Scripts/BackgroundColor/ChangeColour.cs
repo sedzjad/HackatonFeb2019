@@ -8,7 +8,7 @@ public class ChangeColour : MonoBehaviour
     public float bluefade = 1;
     public float greenfade = 1;
     public float opacity = 1;
-    [SerializeField]private float decrease = 0.05f;
+    [SerializeField]private float decrease = 0.15f;
     Camera cam;
     void Start()
     {
@@ -19,19 +19,6 @@ public class ChangeColour : MonoBehaviour
     void Update()
     {
         Color fade = new Color(redfade,greenfade, bluefade, opacity);
-
-
-        //if (Input.GetKey(KeyCode.Mouse0))
-//        {
-//            GreenUp();
-//        }
-
-
-        if (Input.GetKey(KeyCode.Mouse1))
-        {
-        RedUp();
-        }
-
         cam.backgroundColor = fade;
     }
 
